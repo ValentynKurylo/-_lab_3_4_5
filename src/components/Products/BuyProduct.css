@@ -1,0 +1,40 @@
+.WrapProduct{
+display: inline-flex;
+}
+.Information>img{
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.Information>p{
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.descInform{
+  margin-left: 100px;
+  width: 50%;
+  height: 480px;
+}
+.Description{
+    font-family: Georgia, serif;
+    font-size: 18px;
+    height: 440px;
+  flex: content-box;
+  overflow-y: scroll;
+}
+h3{
+    font-family: Georgia, serif;
+    font-size: 27px;
+    margin: 10px;
+}
+.word{
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin: 5px;
+}
+.UpDel{
+    width: 100px;
+    margin-left: 20px;
+}

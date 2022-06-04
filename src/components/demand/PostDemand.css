@@ -1,0 +1,28 @@
+.backgroundDemand{
+    width: 100%;
+    flex: content-box;
+    overflow-y: scroll;
+    height: 535px;
+    background-image: url("https://thumbs.dreamstime.com/b/antecedentes-de-la-farmacia-fondo-cl%C3%ADnico-icono-atenci%C3%B3n-m%C3%A9dica-ca%C3%ADda-aleatoria-concepto-m%C3%A9dico-s%C3%ADmbolos-farmac%C3%A9uticos-162708767.jpg");
+}
+.OrderWord{
+    padding: 40px;
+    font-size: 20px;
+    font-family: Georgia, serif;
+}
+.WrapDemand{
+    display: inline-flex;
+}
+.pDemand{
+    border: 2px slategray solid;
+    width: 350px;
+    height: 100px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: Georgia, serif;
+}
+.Top{
+    font-size: 25px;
+    font-family: Georgia, serif;
+    margin: 20px;
+}
