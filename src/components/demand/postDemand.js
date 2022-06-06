@@ -26,7 +26,7 @@ export default function PostDemand() {
                 <div className={"OrderWord"}>Order what you want</div>
                 <div className={"enter"}>
                     <form method={"POST"} onSubmit={Order}>
-                        <input name={"nameProduct"} type={"text"} placeholder={"Enter name of product"}/><br/>
+                        <input name={"nameProduct"} type={"text"} data-testid={"name3"} placeholder={"Enter name of product"}/><br/>
                         <input name={"message"} type={"text"} placeholder={"Leave your message"}/><br/>
                         <button type={'submit'}>Send</button>
                     </form>

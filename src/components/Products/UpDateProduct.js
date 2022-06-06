@@ -19,10 +19,10 @@ export default function UpDateProduct() {
     return (
         <div className={"backImg"}>
             <center>
-                <div className={"sign"}>Up Date Product</div>
+                <div className={"sign"}>Up Date Product - {product.name}</div>
                 <div className={"enter"}>
                     <form method={"PUT"} onSubmit={UpDate}>
-                        <input name={"name"} type={"text"} placeholder={"Enter your name"}/><br/>
+                        <input name={"name"} type={"text"} data-testid={"name1"} placeholder={"Enter your name"}/><br/>
                         <input name={"price"} type={"number"} step={"0.1"} placeholder={"price"}/><br/>
                         <input name={"number"} type={"number"} placeholder={"number"}/><br/>
                         <input name={"description"} type={"text"} placeholder={"description"}/><br/>

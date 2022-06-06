@@ -23,7 +23,7 @@ export default function AddProduct() {
                 <div className={"sign"}>Add Product</div>
                 <div className={"enter"}>
                     <form method={"POST"} onSubmit={Post}>
-                        <input name={"name"} type={"text"} placeholder={"Enter your name"}/><br/>
+                        <input name={"name"} type={"text"}  data-testid="name" placeholder={"Enter your name"}/><br/>
                         <input name={"price"} type={"number"} step={"0.1"} placeholder={"price"}/><br/>
                         <input name={"number"} type={"number"} placeholder={"number"}/><br/>
                         <input name={"description"} type={"text"} placeholder={"description"}/><br/>

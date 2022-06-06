@@ -1,6 +1,6 @@
 import './login.css'
 
-import {Link} from "react-router-dom";
+import  {Link, Router} from "react-router-dom";
 import {useState, useEffect} from 'react'
 import UserService from "../../../Services/UserService";
 import {useDispatch, useSelector} from "react-redux";
@@ -40,15 +40,15 @@ export default function Login() {
                     <div className={"sign"}>Sign in</div>
                     <div className={"enter"}>
                         <form method={"POST"} onSubmit={login}>
-                            <input name={"username"} type={"text"} placeholder={"Enter your login"}/><br/>
-                            <input name={"password"} type={"text"} placeholder={"Create your password"}/><br/>
+                            <input name={"username"} type={"text"} data-testid="username" placeholder={"Enter your login"}/><br/>
+                            <input name={"password"} type={"password"} data-testid="password" placeholder={"Create your password"}/><br/>
                             <button type={'submit'}>Enter</button>
                         </form>
                         <div>
                             <p className={"reg"}>If you are not yet registered</p>
-                            <Link to={'/registration'}>
-                                <button>Registration</button>
-                            </Link>
+                            <a to={'/registration'}>
+                                <button data-testid="submit-login">Registration</button>
+                            </a>
                         </div>
                     </div>
                 </center>

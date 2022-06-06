@@ -20,16 +20,16 @@ export default function Registration() {
                 <div className={"sign"}>Registration</div>
                 <div className={"enter"}>
                     <form method={"POST"} onSubmit={registr}>
-                        <input name={"username"} type={"text"} placeholder={"Enter your username"}/><br/>
-                        <input name={"login"} type={"text"} placeholder={"Enter your login"}/><br/>
-                        <input name={"password"} type={"text"} placeholder={"Create your password"}/><br/>
+                        <input name={"username"} type={"text"} data-testid="username1" placeholder={"Enter your username"}/><br/>
+                        <input name={"login"} type={"text"} data-testid="login1" placeholder={"Enter your login"}/><br/>
+                        <input name={"password"} type={"password"} data-testid="password1" placeholder={"Create your password"}/><br/>
                         <button type={'submit'}>Register</button>
                     </form>
                     <div>
                             <p className={"reg"}>if you have already registered</p>
-                            <Link to={'/login'}>
-                                <button>Sign in</button>
-                            </Link>
+                            <a to={'/login'}>
+                                <button data-testid="sub">Sign in</button>
+                            </a>
                         </div>
                 </div>
                 </center>
